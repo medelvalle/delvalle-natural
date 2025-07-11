@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Front End</title>
+    <!--Iconos de Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logyNav">
+            <img src="./img/logo2.jpg" alt="Logo" width="60" height="60" class="Logo">
+            <!-- Boton para vista en móviles
+        <button id="menu-toggle" aria-label="Abrir menú">
+            <i class="fa fa-bars"></i>
+        </button> -->
+            <nav id="headernav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Productos">Productos</a></li>
+                    <li><a href="#resenias">Reseñas</a></li>
+                    <li><a href="#contactanos">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="Inicio">
+        <h1>Bienvenido a <span class="glow">del Valle Natural</span></h1>
+        </section>
+        <section class="media">
+            <video controls autoplay muted loop class="video1">
+                <source src="./img/d.mp4" type="video/mp4">
+                <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+            </video>
+        </section>
+
+        <!--Productos-->
+        <a id="productos"></a>
+        <section class="secciones">
+            <h2>Productos</h2>
+            <div class="productos">
+                
+            </div>
+            <!-- Carrito de compras-->
+            <section class="carritoCompras">
+
+            </section>
+        </section>
+
+        <!--
+        <section id="Productos">
+            <div class="contenedor-tit">
+                <h2>Nuestros Productos</h2>
+            </div>
+            <div class="contenedor-prod">
+                <div class="card">
+                    <img src="./img/mix1.jpg" width="260" height="200" alt="card" />
+                    <h3>Mix Frutos secos</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/mix2.jpg" width="260" height="200" alt="card" />
+                    <h3>Mix Cervecero</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/ban-des.jpg" width="260" height="200" alt="card" />
+                    <h3>Banana desecada</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/pasas-uva.jpg" width="260" height="200" alt="card" />
+                    <h3>Pasas de uva</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/copo-maiz.jpg" width="260" height="200" alt="card" />
+                    <h3>Copos de Maíz</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/arito-frutal.jpg" width="260" height="200" alt="card" />
+                    <h3>Arito frutal</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/alm1.jpg" width="260" height="200" alt="card" />
+                    <h3>Almohaditas</h3>
+                    <p>Breve descripcion</p>
+                </div>
+                <div class="card">
+                    <img src="./img/fibra.jpg" width="260" height="200" alt="card" />
+                    <h3>Fibra Granix</h3>
+                    <p>Breve descripcion</p>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <section id="Contacto">
+            <a id="Servicios"></a>
+            <div class="pago">
+                <h2>Medios de Pago</h2>
+                <h3>Pago electrónico</h3>
+                <ul>
+                    <li>Modo</li>
+                    <li>Mercado Pago</li>
+                    <li>Transferencia Bancaria</li>
+                </ul>
+                <h3>Pago en Efectivo</h3>
+                <ol>
+                    <li>Descargar el formulario y completarlo</li>
+                    <li>Realiza el pago en Rapipago</li>
+                    <li>Enviar el formulario y el ticet de pago a nuestro e-mail</li>
+                </ol>
+            </div>
+
+            <section id="contactanos">
+            <h2>Contacto</h2>
+            <div class="form">
+                <form class="formcontacto" action="https://formspree.io/f/mgvkwrzb" method="POST">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="2" cols="30" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            </section>
+            <div class="map">
+                <a id="Nosotros"></a>
+                <h2>Visitanos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.150577445846!2d-58.435934200000005!3d-34.5750563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb595c9a6010d%3A0x8267a704cc9348d!2sAv.%20Dorrego%202540%2C%20C1425GAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1747527306188!5m2!1sen!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--
+        <a href="https://www.youtube.com" target="_blank">Link a youtube</a>
+        <a href="documento.pdf" download="">Descargar documento</a>-->
+            </div>
+        </section>
+        <a id="resenias"></a>
+        <section class="secciones">
+            <h2>Reseñas</h2>
+            <div class="resenias">
+                <div class="rcard">
+                    <img src="./img/resenia1.jpg" alt="">
+                    <div class="rcard-content">
+                        <div>
+                            <span class="rcard-nombre">Maria Nur</span><br>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Productos de calidad</p>
+                    </div>
+                </div>
+                <div class="rcard">
+                    <img src="./img/resenia2.jpg" alt="">
+                    <div class="rcard-content">
+                        <div>
+                            <span class="rcard-nombre">Maite Perez</span><br>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Excelente!!</p>
+                    </div>
+                </div>
+                <div class="rcard">
+                    <img src="./img/resenia3.jpg" alt="">
+                    <div class="rcard-content">
+                        <div>
+                            <span class="rcard-nombre">Jose Bianco</span><br>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Buena atención y trato</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="footnav">
+            &copy;2025
+            Todos los derechos reservados
+            <ul>
+                <li><a href="http://www.instagram.com" target="_blank" class="redes-menu"><i
+                            class="fa-brands fa-square-instagram"></i>
+                        Instagram</a></li>
+                <li><a href="http://www.tiktok.com" target="_blank" class="redes-menu"><i
+                            class="fa-brands fa-tiktok"></i> Tiktok</a>
+                </li>
+                <li><a href="http://www.facebook.com" target="_blank" class="redes-menu"><i
+                            class="fa-brands fa-square-facebook"></i>
+                        Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
