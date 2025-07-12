@@ -11,8 +11,11 @@ Es un sitio single page que cuenta con las siguientes secciones:
 - Productos.
 - Carrito de compras.
 - Contacto.
+
 Hemos tratado de representar una pagina web sobre un emprendimiento de productos dieteticos y organicos que se centra en el ambito de venta online. Hemos implementado una API que envía mails al propietario de la pagina cuando alguien llena el formulario de consultas.
+
 Próximas mejoras a realizar:
+
 - Look and Feel de la web
 - Local Storage
 - Conexión a base de datos y backend con Java
